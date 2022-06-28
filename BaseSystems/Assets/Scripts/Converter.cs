@@ -27,6 +27,18 @@ public class Converter : MonoBehaviour
         {
             number = Convert.ToInt64(value, 2);
         }
+        else if (baseSelection.value == 1)
+        {
+            number = Convert.ToInt64(value, 8);
+        }
+        else if (baseSelection.value == 2)
+        {
+            number = Convert.ToInt64(value, 10);
+        }
+        else if (baseSelection.value == 3)
+        {
+            number = Convert.ToInt64(value, 16);
+        }
 
         binText.text = Convert.ToString(number, 2);
         octText.text = Convert.ToString(number, 8);
